@@ -1,0 +1,6 @@
+/Users/will/Desktop/Godot/playground/.mono/temp/bin/Tools/Godot C# Playground.dll
+/Users/will/Desktop/Godot/playground/.mono/temp/bin/Tools/Godot C# Playground.pdb
+/Users/will/Desktop/Godot/playground/.mono/temp/obj/Tools/Godot C# Playground.csprojAssemblyReference.cache
+/Users/will/Desktop/Godot/playground/.mono/temp/obj/Tools/Godot C# Playground.csproj.CoreCompileInputs.cache
+/Users/will/Desktop/Godot/playground/.mono/temp/obj/Tools/Godot C# Playground.dll
+/Users/will/Desktop/Godot/playground/.mono/temp/obj/Tools/Godot C# Playground.pdb
