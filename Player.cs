@@ -3,16 +3,27 @@ using System;
 
 public class Player : KinematicBody2D
 {
-  [Export]
-  public int moveSpeed = 250;
+  [Export] public int Speed = 400;
 
+  Vector2 velocity = new Vector2();
+
+  public void GetInput()
+  {
+    LookAt(GetGlobalMousePosition());
+    velocity = new Vector2().Rotated(Rotation);
+
+    if (Input.IsActionPressed("down"))
+      velocity = new Vector2(-Speed, 0).Rotated(Rotation);
+
+    if (Input.IsActionPressed("up"))
+      velocity = new Vector2(Speed, 0).Rotated(Rotation);
+
+    velocity = velocity.Normalized() * Speed;
+  }
   public override void _PhysicsProcess(float delta)
   {
 
-    var motion = new Vector2();
-    motion.x = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
-    motion.y = Input.GetActionStrength("move_down") - Input.GetActionStrength("move_up");
-
-    MoveAndCollide(motion.Normalized() * moveSpeed * delta);
+    GetInput();
+    MoveAndSlide(velocity);
   }
 }
