@@ -7,13 +7,14 @@
 extents = Vector2( 72, 68 )
 
 [node name="Player" type="KinematicBody2D"]
+position = Vector2( 427, 254 )
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 458, 265 )
+position = Vector2( -1, 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 457, 265 )
+position = Vector2( -2, 1 )
 shape = SubResource( 1 )
 
